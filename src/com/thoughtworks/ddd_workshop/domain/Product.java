@@ -8,5 +8,7 @@ public class Product {
         this.name = name;
     }
 
-    
+    public String toString(){
+        return "Product: " + "name= " + name;
+    }
 }
