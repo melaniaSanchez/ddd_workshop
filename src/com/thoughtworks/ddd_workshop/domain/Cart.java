@@ -5,13 +5,13 @@ import java.util.ArrayList;
 
 public class Cart {
 
-    private ArrayList<Product> items = new ArrayList<>();
+    private ArrayList<Item> items = new ArrayList<>();
 
-    public void addItem(Product product) {
-        items.add(product);
+    public void addItem(Item item) {
+        items.add(item);
     }
 
-    public ArrayList<Product> getItems() {
+    public ArrayList<Item> getItems() {
         return items;
     }
 }
