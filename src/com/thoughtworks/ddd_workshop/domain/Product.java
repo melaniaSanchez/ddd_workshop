@@ -8,6 +8,10 @@ public class Product {
         this.name = name;
     }
 
+    public String getName(){
+        return this.name;
+    }
+
     public String toString(){
         return "Product: " + "name= " + name;
     }
