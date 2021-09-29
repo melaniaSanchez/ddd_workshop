@@ -1,15 +1,17 @@
 package com.thoughtworks.ddd_workshop.domain;
 
 
+import java.util.ArrayList;
+
 public class Cart {
 
-    private Product item;
+    private ArrayList<Product> items = new ArrayList<>();
 
     public void addItem(Product product) {
-        item = product;
+        items.add(product);
     }
 
-    public Product getItems() {
-        return item;
+    public ArrayList<Product> getItems() {
+        return items;
     }
 }
