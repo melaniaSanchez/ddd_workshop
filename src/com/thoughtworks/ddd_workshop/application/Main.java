@@ -2,22 +2,24 @@ package com.thoughtworks.ddd_workshop.application;
 
 import com.thoughtworks.ddd_workshop.domain.Cart;
 import com.thoughtworks.ddd_workshop.domain.Item;
+import com.thoughtworks.ddd_workshop.domain.Price;
 import com.thoughtworks.ddd_workshop.domain.Product;
 
+import java.math.BigDecimal;
 import java.util.UUID;
 
 public class Main {
 
     public static void main(String[] args) {
+        Price price = new Price(BigDecimal.valueOf(10.0));
         Cart cart = new Cart();
         Cart cart1 = new Cart();
         Cart cart2 = new Cart();
-        Product ipadpro = new Product("IPad Pro");
-        Product ipadpro1 = new Product("IPad Pro");
-        Product ipadpro2 = new Product("IPad Pro");
-        Product pen = new Product("Hero ink Pen");
-        Product shoes = new Product("Reebok Cricket bat");
-        Product foo = new Product("foo");
+        Product ipadpro = new Product("IPad Pro", price);
+        Product ipadpro1 = new Product("IPad Pro", price);
+        Product ipadpro2 = new Product("IPad Pro", price);
+        Product pen = new Product("Hero ink Pen", price);
+        Product shoes = new Product("Reebok Cricket bat", price);
 
         cart.addItem(new Item(ipadpro, 1));
         cart1.addItem(new Item(ipadpro1, 1));
@@ -26,7 +28,6 @@ public class Main {
         cart.addItem(new Item(shoes,2));
 
         cart.removeItem(ipadpro);
-        cart.removeItem(foo);
 
         System.out.println(cart1.equals(cart1));
         System.out.println(cart1.equals(cart2));
