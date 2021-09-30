@@ -10,6 +10,7 @@ public class Cart {
     private UUID uuid;
     private List<Item> items = new ArrayList<>();
     private List<Product> deletedProducts = new ArrayList<>();
+    private Boolean checkout = false;
 
     public Cart(UUID uuid) {
         this.uuid = uuid;
@@ -43,6 +44,10 @@ public class Cart {
             return true;
         }
         return false;
+    }
+
+    public void checkout() {
+        this.checkout = true;
     }
 
     private void addDeletedProduct(Product product) {

@@ -14,6 +14,10 @@ public class Product {
         return this.name;
     }
 
+    public Price getPrice() {
+        return price;
+    }
+
     public String toString(){
         return "Product: " + "name= " + name + ", " + price;
     }
