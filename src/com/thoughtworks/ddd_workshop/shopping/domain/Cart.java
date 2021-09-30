@@ -1,4 +1,4 @@
-package com.thoughtworks.ddd_workshop.domain;
+package com.thoughtworks.ddd_workshop.shopping.domain;
 
 
 import java.util.ArrayList;

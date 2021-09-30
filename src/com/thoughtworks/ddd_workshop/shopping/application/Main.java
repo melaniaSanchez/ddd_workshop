@@ -1,9 +1,9 @@
-package com.thoughtworks.ddd_workshop.application;
+package com.thoughtworks.ddd_workshop.shopping.application;
 
-import com.thoughtworks.ddd_workshop.domain.Cart;
-import com.thoughtworks.ddd_workshop.domain.Item;
-import com.thoughtworks.ddd_workshop.domain.Price;
-import com.thoughtworks.ddd_workshop.domain.Product;
+import com.thoughtworks.ddd_workshop.shopping.domain.Cart;
+import com.thoughtworks.ddd_workshop.shopping.domain.Item;
+import com.thoughtworks.ddd_workshop.shopping.domain.Price;
+import com.thoughtworks.ddd_workshop.shopping.domain.Product;
 
 import java.math.BigDecimal;
 import java.util.UUID;

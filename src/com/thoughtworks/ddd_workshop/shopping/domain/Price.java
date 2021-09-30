@@ -1,4 +1,4 @@
-package com.thoughtworks.ddd_workshop.domain;
+package com.thoughtworks.ddd_workshop.shopping.domain;
 
 import java.math.BigDecimal;
 import java.util.Currency;
