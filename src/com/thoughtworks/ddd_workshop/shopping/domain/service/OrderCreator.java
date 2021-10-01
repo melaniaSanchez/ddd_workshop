@@ -13,7 +13,7 @@ public class OrderCreator {
         List<Item> items = cart.getItems();
         items.forEach(item -> {
             for(int i = 1; i <= item.getQuantity(); i++) {
-                order.addProduct(new Product(item.getProduct().getName(), item.getProduct().getPrice()));
+                order.addProduct(new Product(item.getProduct().getName(), item.getProduct().getPrice(), item.getProduct().getWeight()));
             }
         });
         return order;

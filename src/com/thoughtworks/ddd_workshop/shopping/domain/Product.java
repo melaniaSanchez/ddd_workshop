@@ -4,10 +4,12 @@ public class Product {
 
     private String name;
     private Price price;
+    private Double weight;
 
-    public Product(String name, Price price){
+    public Product(String name, Price price, Double weight){
         this.name = name;
         this.price = price;
+        this.weight = weight;
     }
 
     public String getName(){
@@ -18,8 +20,12 @@ public class Product {
         return price;
     }
 
+    public Double getWeight() {
+        return weight;
+    }
+
     public String toString(){
-        return "Product: " + "name= " + name + ", " + price;
+        return "Product: " + "name= " + name + ", " + price + ", weight= " + weight;
     }
 
 
